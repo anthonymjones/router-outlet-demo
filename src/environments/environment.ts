@@ -3,7 +3,12 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  apiUrl: 'https://api.openbrewerydb.org/breweries/',
+  mapbox: {
+    accessToken:
+      'pk.eyJ1IjoiYW50aG9ueWpvbmVzMDUxOSIsImEiOiJja29hdGtkM2syNGUyMnZtbGd3c3dmbXY5In0.KgnKq0JnqxH11UuyZTqIrQ',
+  },
 };
 
 /*

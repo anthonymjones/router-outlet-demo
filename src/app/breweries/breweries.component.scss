@@ -1,0 +1,21 @@
+.search-container {
+  width: calc(100vw - 28px);
+  padding: 1rem;
+  border-bottom: 1px solid var(--porter);
+}
+
+.results-and-details {
+  display: flex;
+  flex-direction: row;
+}
+
+.left-bar {
+  width: 20em;
+  overflow: auto;
+  height: calc(100vh - 268px);
+  border-right: 1px solid var(--porter);
+}
+
+.map-container {
+  flex-grow: 1;
+}

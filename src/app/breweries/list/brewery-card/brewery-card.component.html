@@ -1,0 +1,21 @@
+<div
+  class="card-container"
+  [title]="brewery.name"
+  (click)="breweryClicked.emit(brewery)"
+>
+  <h1>
+    {{ brewery.name }}
+  </h1>
+
+  <p>{{ brewery.street }}</p>
+
+  <p>{{ brewery.city }}, {{ brewery.state }}</p>
+
+  <a [href]="'tel:' + brewery.phone">{{ brewery.phone | phone }}</a>
+  <br />
+  <a *ngIf="brewery.website_url" [href]="brewery.website_url" target="_blank">{{
+    brewery.website_url | prettyUrl
+  }}</a>
+
+  <p>Brewery Type: {{ brewery.brewery_type }}</p>
+</div>
